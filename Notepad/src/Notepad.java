@@ -127,8 +127,7 @@ public class Notepad extends Frame implements KeyListener {
     }
 
     class mylistener extends WindowAdapter{
-        public void windowClosing (WindowEvent e)
-        {
+        public void windowClosing (WindowEvent e){
             System.exit(0);
         }
     }
