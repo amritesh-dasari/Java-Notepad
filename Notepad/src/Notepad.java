@@ -3,7 +3,6 @@ import java.awt.event.*;
 import java.awt.datatransfer.*;
 import java.io.*;
 import javax.swing.*;
-import javax.swing.text.Document;
 import javax.swing.undo.*;
 
 public class Notepad extends Frame implements KeyListener {
@@ -25,7 +24,6 @@ public class Notepad extends Frame implements KeyListener {
         tarea.getDocument().addUndoableEditListener(manager);
         tarea.addKeyListener(this);
         MenuBar menubar = new MenuBar();
-
 
         Menu File = new Menu("File");
         MenuItem New = new MenuItem("New");
@@ -80,7 +78,6 @@ public class Notepad extends Frame implements KeyListener {
         copy.addActionListener(new Copy());
         paste.addActionListener(new Paste());
         delete.addActionListener(new Delete());
-
 
         File.add(New);
         File.add(NewWindow);
@@ -276,6 +273,5 @@ public class Notepad extends Frame implements KeyListener {
         f.setSize(1366,768);
         f.setVisible(true);
         f.show();
-
     }
 }
