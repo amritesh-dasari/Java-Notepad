@@ -273,9 +273,7 @@ public class Notepad extends Frame implements KeyListener {
     public static void main(String args[]){
         Frame f = new Notepad();
         f.setTitle(Notepad.filename+" - Java Notepad");
-        f.setSize(1080,720);
-        //StatusBar statusBar = new StatusBar();
-        //f.add(statusBar, java.awt.BorderLayout.SOUTH);
+        f.setSize(1366,768);
         f.setVisible(true);
         f.show();
 
